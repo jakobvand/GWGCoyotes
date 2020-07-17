@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Picker</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+
+  <body id="body">
+    <form>  
+      <div>
+        <h1>Car Picker</h1>
+      </div>
+      <div>
+          <img id="carImage" src="./images/mystery.jpg" alt="Select Car" width="300" ><br>
+      </div>
+      <div>
+          <label for="carList">Choose a car:</label>
+          <select id="carList"></select><br><br>
+      </div>
+      <div>
+        <input type="button" value="Delete" id="btnDelete">
+        <input type="button" value="Edit" id="btnEdit">
+        <input type="button" value="Add" id="btnAdd">
+      </div>
+      <br>
+      <div id="inputSection">
+        <div>
+              <h2>Input Data</h2>
+        </div>
+        <div>
+              <label>Make:</label>
+              <input type="text" id="txtMake">
+        </div>
+        <div>
+            <label>Model:</label>
+            <input type="text" id="txtModel">
+        </div>
+        <div>
+            <label>Doors:</label>
+            <input type="text" id="txtDoors">
+        </div>
+        <div>
+            <label>Cylinders:</label>
+            <input type="text" id="txtCylinders">
+        </div>
+        <div>
+            <label>Image Path:</label>
+            <input type="text" id="txtImagePath">
+        </div>
+        <div>
+          <input type="button" value="Cancel" id="btnCancel">
+          <input type="button" value="Save" id="btnSave">
+        </div>
+    </div>
+    </form>
+    <script src="./app.js"></script>
+    <script src="./data.js"></script>
+    <script src="./listener.js"></script>
+    <script src="./form.js"></script>
+  </body>
+</html>
